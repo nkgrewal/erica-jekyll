@@ -1,0 +1,9 @@
+biolinks:
+    - { url: '/resume', text: 'Resume' }
+    - { url: 'https://www.linkedin.com/in/ejorgensen', text: 'LinkedIn' }
+
+pagelinks:
+    - { url: '/copywriting', text: 'Copywriting' }
+    - { url: '/content-development', text: 'Content Development' }
+    - { url: '/content-strategy', text: 'Content Strategy' }
+

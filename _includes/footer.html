@@ -1,4 +1,18 @@
-<footer class="site-footer">
+<!-- FOOTER -->
+<footer class="row footer">
+  <div class="col-md-12">
+    {{ site.data.global.footer_text }}
+    <ul class="biolinks">
+      {% for item in site.data.nav.biolinks %}
+        <li><a href="{{ item.url }}">{{ item.text }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</footer> 
+<!-- endFOOTER -->
+
+
+<!--<footer class="site-footer">
 
   <div class="wrapper">
 
@@ -36,3 +50,4 @@
   </div>
 
 </footer>
+-->

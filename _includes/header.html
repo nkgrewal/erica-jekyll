@@ -1,4 +1,44 @@
-<header class="site-header">
+<!-- MAINNAV -->
+<header class="col-md-3 mainNav">
+  <div class="wrap clearfix">
+    <div class="name">
+      <a href="{{ site.github.url }}/">
+        <h1 class="first-name">Erica M.</h1>
+        <h2 class="last-name">Jorgensen</h2>
+      </a>
+    </div>
+    <ul class="biolinks">
+      {% for item in site.data.nav.biolinks %}
+        <li><a href="{{ item.url }}">{{ item.text }}</a></li>
+      {% endfor %}
+    </ul>
+    <!-- Mobile Menu -->
+    <ul class="mobile pagelinks">
+      <li><a class="name" href="{{ site.github.url }}/">EMJ</a></li>
+      {% for link in site.data.nav.pagelinks %}
+        {% assign current = nil %}
+        {% if page.url contains link.url or page.layout contains link.layout %}
+          {% assign current = 'active' %}
+        {% endif %}
+        <li><a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a></li>
+      {% endfor %}
+    </ul>
+    <!-- Desktop Menu -->
+    <ul class="desktop pagelinks">
+      {% for link in site.data.nav.pagelinks %}
+        {% assign current = nil %}
+        {% if page.url contains link.url or page.layout contains link.layout %}
+          {% assign current = 'active' %}
+        {% endif %}
+        <li><a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="bg-dec1"></div>
+</header>
+<!-- endMAINNAV -->
+
+<!--<header class="site-header">
 
   <div class="wrapper">
 
@@ -24,4 +64,4 @@
 
   </div>
 
-</header>
+</header>-->
