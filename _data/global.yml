@@ -2,7 +2,12 @@
 #title: 'Erica M. Jorgensen'
 #description: 'Get all your info for the big extravaganza here'
 
-img_dir:     '/pages/pieces/'
+#img dirs
+site_img_dir:   '/assets/img/'
+pieces_dir:     '/pieces/'
+img_dir:     '/blog/images/'
+
+#global text
 footer_text: 'Copyright 2014 Erica Jorgensen, Inc. All rights reserved.'
 
 # Admin Settings

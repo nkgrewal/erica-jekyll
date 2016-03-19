@@ -16,7 +16,19 @@
 
         <div class="col-md-9 mainContent">
 
-            {{ content }}
+            {% comment %} LOGIC TO INCLUDE PORTFOLIO PIECES {% endcomment %}
+
+            {% for piece in site.[page.category] %}
+              {% assign i = forloop.index %}
+              {% assign cat-url = page.url | split: '/' %}
+
+              {% if cat-url[2] == nil %}
+                {% if forloop.first == true %} {{ content }} {% endif %}
+                {% if page.url != piece.url %} {% include piece.html %} {% endif %}
+              {% else %}
+                {% if page.url == piece.url %} {% include piece.html %} {% endif %}
+              {% endif %}  
+            {% endfor %}
 
         </div>
       </div>

@@ -4,6 +4,6 @@ biolinks:
 
 pagelinks:
     - { url: '/copywriting', text: 'Copywriting' }
-    - { url: '/content-development', text: 'Content Development' }
+    - { url: '/content-dev', text: 'Content Development' }
     - { url: '/content-strategy', text: 'Content Strategy' }
 

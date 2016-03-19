@@ -1,0 +1,68 @@
+<!-- Template for each carousel piece -->
+<div class="piece">
+  <div class="row">
+    <div class="col-md-12 title">
+      <h2><a href="{{ piece.url }}">{{ piece.title }}</a></h2>
+      <h5>@ {{ piece.company }}</h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div id="{{ piece.carousel_id }}" class="carousel slide">
+        <!-- Indicator buttons -->
+        <ol class="carousel-indicators">
+          {% for name in piece.images %}
+            {% assign state = nil %}
+            {% if forloop.index0 == 0 %}
+              {% assign state = ' class="active"' %}
+            {% endif %}
+            <li data-target="#{{ piece.carousel_id }}" data-slide-to="{{ forloop.index0 }}"{{ state }}></li>
+            {% else %}
+                <!--WARNING: no images-->
+          {% endfor %}
+        </ol>
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+          {% for name in piece.images %}
+            {% assign state = nil %}
+            {% if forloop.index == 1 %}
+              {% assign state = 'active' %}
+            {% endif %}
+            <div class="{{ state }} item">
+              {% if name.url != nil %}
+                <a href="{{ name.url }}" target="_blank">
+                  <img src="{{ site.github.url }}{{ site.data.global.pieces_dir }}{{ name.image }}" />
+                </a>
+                {% else %}
+                <a href="{{ site.github.url }}{{ site.data.global.pieces_dir }}{{ name }}">
+                  <img src="{{ site.github.url }}{{ site.data.global.pieces_dir }}{{ name }}" />
+                </a>
+              {% endif %}
+            </div>
+            {% else %}
+                <!--WARNING: no images-->
+          {% endfor %}
+        </div>
+        <!-- Carousel nav -->
+        <a class="carousel-control left" href="#{{ piece.carousel_id }}" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#{{ piece.carousel_id }}" data-slide="next">&rsaquo;</a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="description">
+      {% if piece.text != nil %}
+        <p>{{ piece.text }}</p>
+      {% else %}
+		{{ piece.content }}
+	  {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% if forloop.last == true %}
+  <!-- no hr -->
+{% else %}
+  <hr class="decorative" />
+{% endif %}

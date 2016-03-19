@@ -23,7 +23,16 @@ plugins_dir:  ./_plugins
 layouts_dir:  ./_layouts
 data_dir:     ./_data
 includes_dir: ./_includes
-collections:  null
+collections:
+  copywriting:
+    output: true
+    permalink: /copywriting/:path/
+  content-strategy:
+    output: true
+    permalink: /content-strategy/:path/
+  content-dev:
+    output: true
+    permalink: /content-dev/:path/
 
 # Handling Reading
 safe:         false
@@ -45,7 +54,7 @@ gems:      []
 
 # Conversion
 markdown:    kramdown
-highlighter: rouge
+highlighter: null
 lsi:         false
 excerpt_separator: "\n\n"
 incremental: false
@@ -58,8 +67,8 @@ baseurl: "" # the subpath of your site, e.g. /blog, does not include host name
 #url:    "http://erica-jorgensen.com" # the base hostname & protocol for your site
 
 # Outputting
-permalink:     date
-paginate_path: /page:num
+permalink:     /blog/date
+paginate_path: /blog//page:num
 timezone:      null
 
 quiet:    false
@@ -73,7 +82,7 @@ redcarpet:
   extensions: []
 
 kramdown:
-  auto_ids:       true
+  auto_ids:       false
   footnote_nr:    1
   entity_output:  as_char
   toc_levels:     1..6
@@ -88,4 +97,4 @@ kramdown:
     coderay_bold_every:        10
     coderay_css:               style
 
-include: ['pages']
+include: ['_pages']
