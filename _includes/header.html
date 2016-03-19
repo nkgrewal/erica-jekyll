@@ -9,7 +9,7 @@
     </div>
     <ul class="biolinks">
       {% for link in site.data.nav.biolinks %}
-        <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+        <li><a href="{{site.github.url}}{{ link.url }}">{{ link.text }}</a></li>
       {% endfor %}
     </ul>
     <!-- Mobile Menu -->
@@ -17,7 +17,7 @@
       <li><a class="name" href="{{ site.github.url }}/">EMJ</a></li>
       {% for link in site.data.nav.pagelinks %}
         <li>
-          <a {% if page.url contains link.url %}class="active"{% endif %} href="{{ link.url }}">{{ link.text }}</a>
+          <a {% if page.url contains link.url %}class="active"{% endif %} href="{{site.github.url}}{{ link.url }}">{{ link.text }}</a>
         </li>
       {% endfor %}
     </ul>
@@ -25,7 +25,7 @@
     <ul class="desktop pagelinks">
       {% for link in site.data.nav.pagelinks %}
         <li>
-          <a {% if page.url contains link.url %}class="active"{% endif %} href="{{ link.url }}">{{ link.text }}</a>
+          <a {% if page.url contains link.url %}class="active"{% endif %} href="{{site.github.url}}{{ link.url }}">{{ link.text }}</a>
         </li>
       {% endfor %}
     </ul>
