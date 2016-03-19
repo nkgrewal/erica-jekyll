@@ -5,10 +5,10 @@ company: All Star Directories
 carousel_id: allstarPdfs
 
 images:
-- { image: 'AAS1-1.png', url: '{{ site.github.url }}{{ site.data.global.pieces_dir }}AAS1.pdf' }
+- { image: 'AAS1-1.png', url: '/pieces/AAS1.pdf' }
 - AAS1-2.png
 - AAS1-5.png
-- { image: 'AAS2-1.png', url: '{{ site.github.url }}{{ site.data.global.pieces_dir }}AAS2.pdf' }
+- { image: 'AAS2-1.png', url: '/pieces/AAS2.pdf' }
 - AAS2-2.png
 - AAS2-3.png
 
