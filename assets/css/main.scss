@@ -114,7 +114,10 @@ ul,ol{
   margin:0;
   line-height: 1.8em;
 }
-ul{ list-style-type: none; }
+ul{ 
+  list-style-type: none;
+  padding-left:0;
+}
 
 p{
   margin-top:1.5em;
@@ -310,7 +313,7 @@ hr{
   text-align: left;
   margin:6px auto 2px auto;
 }
-.mainContent > .description {color:#989693;}
+.mainContent > .description { color:#989693; }
 .piece{
   margin:5em auto 3.5em auto;
   overflow: hidden;
@@ -324,7 +327,6 @@ hr{
 .piece p:first-child{ margin-top:0; }
 
 /* SETTING LIST STYLE IN DESCRIPTION */
-.description ul{ padding-left:0; }
 .description ol {
   counter-reset:li;
   margin-left:0;
