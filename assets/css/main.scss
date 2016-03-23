@@ -270,7 +270,7 @@ hr{
 /*bg color in maincontent area */
 .mainContent, .decorative::after{ background-color: #fcfcfa; }
 .mainContent a:hover{ 
-  background-color: rgba(76,76,76,.15);
+  background-color: rgba(232,220,215,.25);
   border-bottom:none;
 }
 
@@ -413,7 +413,7 @@ hr{
     -o-transition: all linear .25s;
     transition: all linear .25s;
 }
-.carousel-control:hover{
+a.carousel-control:hover{
   background-color: #4c4c4c;
   -webkit-opacity:.5;
   -moz-opacity:.5;
@@ -448,6 +448,7 @@ hr{
   width:15px;
   height:15px;
 }
+.carousel-indicators li:hover{ background-color: #ccc; }
 .carousel-indicators .active{
   width:15px;
   height:15px;

@@ -13,15 +13,20 @@
           {% else %}href="{{ link.url }}"{% endunless %}>{{ link.text }}</a></li>
       {% endfor %}
     </ul>
-    <!-- Mobile Menu -->
-    <ul class="mobile pagelinks">
-      <li><a class="name" href="{{ site.github.url }}/">EMJ</a></li>
-      {% for link in site.data.nav.pagelinks %}
-        <li>
-          <a {% if page.url contains link.url %}class="active"{% endif %} href="{{site.github.url}}{{ link.url }}">{{ link.text }}</a>
-        </li>
-      {% endfor %}
-    </ul>
+    
+    {% comment %} LOGIC TO REMOVE MOBILE MENU FROM HOME {% endcomment %}
+    {% unless page.category =='home' %}
+      <!-- Mobile Menu -->
+      <ul class="mobile pagelinks">
+        <li><a class="name" href="{{ site.github.url }}/">EMJ</a></li>
+        {% for link in site.data.nav.pagelinks %}
+          <li>
+            <a {% if page.url contains link.url %}class="active"{% endif %} href="{{site.github.url}}{{ link.url }}">{{ link.text }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endunless %}
+
     <!-- Desktop Menu -->
     <ul class="desktop pagelinks">
       {% for link in site.data.nav.pagelinks %}
