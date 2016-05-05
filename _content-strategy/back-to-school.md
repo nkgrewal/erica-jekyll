@@ -5,12 +5,12 @@ company: All Star Directories
 carousel_id: allstarPdfs
 
 images:
-- { image: 'AAS1-1.png', url: '/pieces/AAS1.pdf' }
-- AAS1-2.png
-- AAS1-5.png
-- { image: 'AAS2-1.png', url: '/pieces/AAS2.pdf' }
-- AAS2-2.png
-- AAS2-3.png
+- { image: 'AAS1-1.jpg', url: '/pieces/AAS1.pdf' }
+- AAS1-2.jpg
+- AAS1-5.jpg
+- { image: 'AAS2-1.jpg', url: '/pieces/AAS2.pdf' }
+- AAS2-2.jpg
+- AAS2-3.jpg
 
 category: content-strategy
 permalink: /content-strategy/back-to-school/

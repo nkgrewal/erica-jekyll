@@ -5,10 +5,10 @@ company: Phinney Ridge Creative Communication
 carousel_id: movingBlog
 
 images:
-- { image: 'movingblog4.png', url: 'https://moving.bedbathandbeyond.com/what-to-digitize-before-you-move/' }
-- { image: 'movingblog1.png', url: 'https://moving.bedbathandbeyond.com/get-it-sold-10-tips-from-a-home-staging-pro/' }
-- { image: 'movingblog2.png', url: 'https://moving.bedbathandbeyond.com/how-to-pack-fragile-items-a-professional-movers-secrets/' }
-- { image: 'movingblog3.png', url: 'https://moving.bedbathandbeyond.com/how-to-host-the-ultimate-garage-sale/' }
+- { image: 'movingblog4.jpg', url: 'https://moving.bedbathandbeyond.com/what-to-digitize-before-you-move/' }
+- { image: 'movingblog1.jpg', url: 'https://moving.bedbathandbeyond.com/get-it-sold-10-tips-from-a-home-staging-pro/' }
+- { image: 'movingblog2.jpg', url: 'https://moving.bedbathandbeyond.com/how-to-pack-fragile-items-a-professional-movers-secrets/' }
+- { image: 'movingblog3.jpg', url: 'https://moving.bedbathandbeyond.com/how-to-host-the-ultimate-garage-sale/' }
 
 category: copywriting
 permalink: /copywriting/moving-blog/

@@ -5,12 +5,12 @@ company: Starbucks
 carousel_id: rewardsProgram
 
 images:
-- starbucks6-1.png
-- starbucks6-2.png
-- starbucks6-3.png
-- starbucks6-4.png
-- starbucks6-5.png
-- starbucks6-6.png
+- starbucks6-1.jpg
+- starbucks6-2.jpg
+- starbucks6-3.jpg
+- starbucks6-4.jpg
+- starbucks6-5.jpg
+- starbucks6-6.jpg
 
 category: content-dev
 permalink: /content-dev/rewards-program/
