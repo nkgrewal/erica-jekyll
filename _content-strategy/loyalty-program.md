@@ -5,8 +5,8 @@ company: Expedia
 carousel_id: expediaLoyalty
 
 images:
-- { image: 'expedia-rewards4-sm.jpg', url: 'expedia-rewards4.jpg' }
-- { image: 'expedia-rewards3-sm.jpg', url: 'expedia-rewards3.jpg' }
+- { image: 'expedia-rewards4-sm.jpg', url: '/pieces/expedia-rewards4.jpg' }
+- { image: 'expedia-rewards3-sm.jpg', url: '/pieces/expedia-rewards3.jpg' }
 - expedia-rewards2.jpg
 
 text: >

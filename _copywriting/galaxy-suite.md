@@ -5,7 +5,7 @@ company: All Star Directories
 carousel_id: allstarCollateral
 
 images:
-- { image: 'allstar-collateral1.jpg', url: 'http://github.com' }
+- { image: 'allstar-collateral1.jpg', url: '/pieces/allstar-collateral1.jpg' }
 - allstar-collateral2.png
 
 text: >
