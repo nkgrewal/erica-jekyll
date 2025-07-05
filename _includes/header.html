@@ -9,7 +9,7 @@
     </div>
     <ul class="biolinks">
       {% for link in site.data.nav.biolinks %}
-        <li><a {% unless link.url contains 'http' %}href="{{site.github.url}}{{ link.url }}"
+        <li><a {% unless link.url contains 'https' %}href="{{site.github.url}}{{ link.url }}"
           {% else %}href="{{ link.url }}"{% endunless %}>{{ link.text }}</a></li>
       {% endfor %}
     </ul>
